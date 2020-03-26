@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-light bg-light">
+    
+        <button class="btn btn-outline-primary" type="button"><a href="/posts">Add new post</a></button>
+        <div style="padding-left: 10px;">
+          <button class="btn btn-outline-success" type="button"><a href="/">Home</a></button>
+        </div>
+   
+    </nav>
+    <%= yield %>
+  </body>
+</html>
